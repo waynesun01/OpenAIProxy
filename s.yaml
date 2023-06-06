@@ -1,5 +1,5 @@
 edition: 1.0.0 #  命令行YAML规范版本，遵循语义化版本（Semantic Versioning）规范
-name: openai-proxy #  项目名称
+name: qiate #  项目名称
 access: default #  秘钥别名
 
 services:
@@ -9,11 +9,11 @@ services:
       region: us-west-1
       # region: "us-west-1" # 来自 publish.yaml Parameters 参数定义, 更多关于变量的使用方法，可以参考：https://www.serverless-devs.com/serverless-devs/yaml#变量赋值
       service:
-        name: openai-proxy
-        description: 欢迎使用openai-proxy
+        name: qiategpt
+        description: 欢迎使用qiategpt
       function:
-        name: openai-proxy
-        description: openai-proxy
+        name: qiategpt
+        description: qiategpt
         codeUri: ./code
         cpu: 0.05
         memorySize: 128
